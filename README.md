@@ -1,36 +1,183 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lalan Kumar — Full Stack Developer Portfolio
 
-## Getting Started
+- A modern, high-performance personal portfolio built with Next.js (App Router) showcasing my work as a Full Stack Developer & AI/ML Engineer.
+Includes an admin dashboard, secure contact system, analytics tracking, and polished UI/UX.
 
-First, run the development server:
+- 🔗 Live Demo: https://your-domain.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 📄 Resume: Downloadable with analytics tracking
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
+### 🌐 Public Website
+- Responsive hero section with smooth animations (GSAP)
+- About, Skills, Projects, Experience & Contact sections
+- Dark / Light theme toggle
+- Scroll progress indicator
+- Mobile-first design
+- Lighthouse-optimized performance
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 📬 Contact System
+- Contact form with validation
+- Cloudflare Turnstile CAPTCHA (bot protection)
+- Email notifications
+- Toast-based success & error feedback
+- Rate limiting & server-side validation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🔐 Admin Dashboard
+- Secure admin login
+- View all contact messages
+- Delete individual messages
+- Logout functionality
+- Protected routes using middleware
 
-## Learn More
+### 📊 Analytics & Tracking (Vercel Analytics)
+- Resume download tracking
+- Social link tracking (LinkedIn / GitHub)
+- Device & visitor tracking
+- Conversion insights
 
-To learn more about Next.js, take a look at the following resources:
+### 🛠 Tech Stack
+#### Frontend
+- Next.js 15 (App Router)
+- React 18
+- Tailwind CSS
+- GSAP & Framer Motion
+- React Icons
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Backend
+- Next.js Route Handlers
+- MongoDB + Mongoose
+- Cloudflare Turnstile
+- Middleware-based auth
+- Rate limiting
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### Tooling
+- Vercel Analytics
+- ESLint
+- TypeScript
+- Git & GitHub
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Project Structure
+.
+├── app
+│   ├── admin
+│   │   ├── login
+│   │   └── page.tsx
+│   ├── api
+│   │   ├── admin
+│   │   │   ├── login
+│   │   │   ├── logout
+│   │   │   └── messages/[id]
+│   │   └── contact
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Skills.tsx
+│   ├── Projects.tsx
+│   ├── Experience.tsx
+│   ├── Contact.tsx
+│   ├── Navbar.tsx
+│   ├── Footer.tsx
+│   ├── Toast.tsx
+│   └── ScrollProgress.tsx
+│
+├── lib
+│   ├── db.ts
+│   ├── mail.ts
+│   └── ratelimit.ts
+│
+├── models
+│   └── Contact.ts
+│
+├── public
+│   ├── profile.jpg
+│   ├── resume.pdf
+│   └── og.jpg
+│
+├── middleware.ts
+├── .env.local
+└── README.md
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 🔐 Environment Variables
+- MONGODB_URI=your_mongodb_connection_string
+- ADMIN_PASSWORD=your_admin_password
+
+- NEXT_PUBLIC_TURNSTILE_SITE_KEY=your_turnstile_site_key
+- TURNSTILE_SECRET_KEY=your_turnstile_secret_key
+
+- EMAIL_USER=your_email
+- EMAIL_PASS=your_email_password
+
+## ▶️ Getting Started
+### 1️⃣ Clone the Repository
+- `git clone https://github.com/your-username/portfolio.git`
+- `cd portfolio`
+
+### 2️⃣ Install Dependencies
+- `npm install`
+
+### 3️⃣ Run Development Server
+- `npm run dev`
+
+- Open👉 `http://localhost:3000`
+
+
+## 🔐 Admin Access
+- Admin page: /admin
+- Login protected via middleware
+- Messages fetched server-side
+- Individual delete supported
+
+## 📊 Analytics Events
+Tracked using @vercel/analytics
+
+| Event Name        | Properties               |
+| ----------------- | ------------------------ |
+| `resume_download` | source, device, visitor  |
+| `social_click`    | platform, source, device |
+
+
+- View events in:
+      Vercel → Project → Analytics → Events
+
+## ⚡ Performance & SEO
+- Optimized images (next/image)
+- Dynamic metadata & Open Graph
+- CSP headers configured
+- Lighthouse score focused
+- Minimal JS payload
+
+## 🧠 Security Measures
+- Cloudflare Turnstile CAPTCHA
+- Rate-limited contact API
+- Server-side validation
+- Protected admin routes
+- Secure headers
+
+## 📌 Future Improvements
+- Pagination in admin dashboard
+- Soft delete / archive messages
+- Project filtering by tech
+- CMS integration
+- Blog section
+
+
+## 👤 Author
+Lalan Kumar
+- Full Stack Developer · AI/ML Engineer
+
+- GitHub: https://github.com/Lalan03
+
+- LinkedIn: https://www.linkedin.com/in/lalan-kumar-5177b6259/
+
+- Email: lk180186@gmail.com
+
+## 📄 License
+- This project is personal & proprietary.
+- All rights reserved © 2025 Lalan Kumar.
+
