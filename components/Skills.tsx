@@ -19,6 +19,8 @@ import {
   SiNumpy,
 } from "react-icons/si";
 
+
+
 type Skill = {
   name: string;
   value: number;
@@ -33,19 +35,19 @@ const skillGroups: { title: string; skills: Skill[] }[] = [
       {
         name: "HTML",
         value: 90,
-        experience: "3+ yrs",
+        experience: "2+ yrs",
         icon: <SiHtml5 />,
       },
       {
         name: "CSS",
         value: 90,
-        experience: "3+ yrs",
+        experience: "2+ yrs",
         icon: <SiCss3/>,
       },
       {
         name: "JavaScript",
         value: 90,
-        experience: "3+ yrs",
+        experience: "2+ yrs",
         icon: <SiJavascript />,
       },
       {
@@ -57,7 +59,7 @@ const skillGroups: { title: string; skills: Skill[] }[] = [
       {
         name: "React",
         value: 88,
-        experience: "3+ yrs",
+        experience: "2+ yrs",
         icon: <SiReact />,
       },
       {
@@ -74,19 +76,19 @@ const skillGroups: { title: string; skills: Skill[] }[] = [
       {
         name: "Node.js",
         value: 85,
-        experience: "3+ yrs",
+        experience: "2+ yrs",
         icon: <SiNodedotjs />,
       },
       {
         name: "MySQL",
         value: 80,
-        experience: "1+ yrs",
+        experience: "2+ yrs",
         icon: <SiMysql/>,
       },
       {
         name: "REST APIs",
         value: 90,
-        experience: "1+ yrs",
+        experience: "2+ yrs",
         icon: <SiFastapi/>,
       },
       {
@@ -103,25 +105,25 @@ const skillGroups: { title: string; skills: Skill[] }[] = [
       {
         name: "Python",
         value: 75,
-        experience: "2 yrs",
+        experience: "2+ yrs",
         icon: <SiPython />,
       },
       {
         name: "TensorFlow",
         value: 65,
-        experience: "1 yr",
+        experience: "2+ yrs",
         icon: <SiTensorflow />,
       },
       {
         name: "Pandas",
         value: 95,
-        experience: "1 yrs",
+        experience: "2+ yrs",
         icon: <SiPandas/>,
       },
       {
         name: "Numpy",
         value: 95,
-        experience: "1 yrs",
+        experience: "2+ yrs",
         icon: <SiNumpy/>
       },
       

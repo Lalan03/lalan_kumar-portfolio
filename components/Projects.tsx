@@ -12,6 +12,79 @@ type Project = {
 };
 
 const projects: Project[] = [
+
+  {
+  title: "Nyaya AI - Agentic Legal Assistant",
+  description:
+    "Developed an AI-powered legal assistant focused on India's new BNS, BNSS, and BSA 2023 laws. Implemented a multi-agent architecture including Legal Assistant, FIR Drafter, Police Investigator, and Trial Bench Simulator. Built a hybrid RAG pipeline using vector search, BM25, knowledge graphs, and IRAC-based reasoning to provide grounded legal responses with verified citations.",
+  tech: [
+    "Python",
+    "FastAPI",
+    "React.js",
+    "Qdrant",
+    "LightRAG",
+    "Ollama",
+    "Supabase",
+    "Docker",
+    "n8n",
+    "JWT",
+    "PostgreSQL"
+  ],
+  category: "AI",
+  link: "https://github.com/Lalan03/Nayaya-ai-Final-Year-Projects"
+},
+
+  {
+  title: "Task Manager – Full Stack Collaboration Platform",
+  description:
+    "Developed a full-stack team collaboration platform for project and task management with role-based authentication. Implemented project creation, member management, task assignment, task tracking, dashboard analytics, JWT authentication, REST APIs, and interactive productivity charts.",
+  tech: [
+    "MongoDB",
+    "Express.js",
+    "React (Vite)",
+    "Node.js",
+    "Zustand",
+    "Tailwind CSS",
+    "Recharts",
+    "JWT"
+  ],
+  category: "Full-Stack",
+  link: "https://github.com/Lalan03/Task-Manager"
+},
+{
+  title: "Eventify – Event Ticketing Platform",
+  description:
+    "Developed an event ticketing platform with role-based access for organizers and users. Implemented event creation, ticket booking, approval workflows, and QR-based PDF ticket generation with a responsive user interface.",
+  tech: [
+    "MongoDB",
+    "Express.js",
+    "React (Vite)",
+    "Node.js",
+    "Tailwind CSS",
+    "QR Code",
+    "PDF Generation"
+  ],
+  category: "Full-Stack",
+  link: "https://github.com/Lalan03/Lalan03-eventify-event-ticketing-app"
+},
+
+{
+  title: "AgriHouse Marketplace",
+  description:
+    "Built a production-ready MERN agriculture marketplace that enables farmers to sell products directly to buyers without intermediaries. Developed secure authentication, product catalog management, user dashboards, admin controls, and responsive interfaces to support transparent and efficient agricultural commerce.",
+  tech: [
+    "MongoDB",
+    "Express.js",
+    "React.js",
+    "Node.js",
+    "JWT",
+    "REST APIs",
+    "Tailwind CSS",
+    "Full-Stack Development"
+  ],
+  category: "Full-Stack",
+  link: "https://github.com/Lalan03/agrihouse-marketplace"
+},
   {
     title: "Kasparro ETL & Backend System",
     description: "Built a production-grade ETL and FastAPI backend that ingests data from APIs, CSV, and JSON sources with incremental checkpointing, canonical deduplication, auditability, and Prometheus-based observability; deployed on Railway with PostgreSQL and Docker.",
@@ -26,14 +99,7 @@ const projects: Project[] = [
     category: "Full-Stack",
     link: "https://github.com/Lalan03/lalan_kumar-portfolio",
   },
-  {
-    title: "AutoFlow – Visual Workflow Automation Platform",
-    description: 
-      "Built a visual workflow automation tool with a drag-and-drop interface.",
-    tech: ["React", "React Flow", "Node.js", "Express", "MongoDB", "Redis", "BullMQ"],
-    category: "Full-Stack",
-    link: "https://github.com/Lalan03/autoflow",
-  },
+  
   {
     title: "Custom Memory Allocator (Team Project)",
     description:
@@ -59,13 +125,7 @@ const projects: Project[] = [
     category: "AI",
     link: "https://github.com/Lalan03/IoT_MoodDetector_PerfumeDispenser.git",
   },
-  {
-    title: "Hospital Management System",
-    description: "",
-    tech: ["HTML","CSS","JavaScript"],
-    category: "Frontend",
-    link: "https://github.com/Lalan03/hospital-management-frontend",
-  },
+  
 ];
 
 const filters = ["All", "Frontend", "Backend", "Full-Stack", "AI"] as const;

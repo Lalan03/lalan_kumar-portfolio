@@ -42,6 +42,15 @@ const education: TimelineItem[] = [
     ],
   },
 
+    {
+    title: "I.T.I (Industrial Training Institute)",
+    org: "Bihar State Education Board, Patna",
+    period: "2018 - 2019",
+    points: [
+        
+    ],
+  },
+
   {
     title: "Class X (Secondary)",
     org: "Kun-Kun Devi High School Fulkaha, Araria",
